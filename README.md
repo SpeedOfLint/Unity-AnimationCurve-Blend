@@ -60,10 +60,10 @@ Upper Left: `Curve 1` (Red), Bottom: `Blended Curve` (Purple), Upper Right: `Cur
 AnimationCurve BlendCurves(AnimationCurve curve1, AnimationCurve curve2, float blendPercentage)
 ```
 
-`curve1`: The first curve.
-`curve2`: The second curve.
-`blendPercentage`: A float (0.01f to 0.25f) representing the blend percentage.
-**Returns**: A new AnimationCurve that smoothly blends the two input curves.
+`curve1`: The first curve.  
+`curve2`: The second curve.  
+`blendPercentage`: A float (0.01f to 0.25f) representing the blend percentage.  
+**Returns**: A new AnimationCurve that smoothly blends the two input curves.  
 
 **CalculateTangents**
 
@@ -71,10 +71,10 @@ AnimationCurve BlendCurves(AnimationCurve curve1, AnimationCurve curve2, float b
 (float inTangent, float outTangent) CalculateTangents(AnimationCurve curve, float time, float deltaTime = 0.01f)
 ```
 
-`curve`: The curve to evaluate.
-`time`: The time position for the tangent calculation.
-`deltaTime`: The offset for calculating tangents (default: 0.01).
-**Returns**: The calculated inTangent and outTangent.
+`curve`: The curve to evaluate.  
+`time`: The time position for the tangent calculation.  
+`deltaTime`: The offset for calculating tangents (default: 0.01).  
+**Returns**: The calculated inTangent and outTangent.  
 
 **CalculateWeights**
 
@@ -82,16 +82,16 @@ AnimationCurve BlendCurves(AnimationCurve curve1, AnimationCurve curve2, float b
 (float inWeight, float outWeight) CalculateWeights(AnimationCurve curve, float time)
 ```
 
-`curve`: The curve to evaluate.
-`time`: The time position for the weight calculation.
-**Returns**: The calculated inWeight and outWeight.
+`curve`: The curve to evaluate.  
+`time`: The time position for the weight calculation.  
+**Returns**: The calculated inWeight and outWeight.  
 
-##🤝 Contributing
+## 🤝 Contributing
 
 Got suggestions, feedback, or just want to say hi? Feel free to reach out from my email or open an issue! 😊
 
 Email: ugur@misclickgames.com
 
-##📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
