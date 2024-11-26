@@ -44,13 +44,27 @@ public class Example : MonoBehaviour
 }
 ```
 
-🖼️ Visual Example
+## 🖼️ Visual Example  
+
 Below is an example of two curves being blended together based on a `20% blend percentage`. The result is a seamless transition from one curve to another:
 
 ![Example](https://github.com/user-attachments/assets/c4f216d4-0a0b-4921-8183-0ab5dbe12b43)
 
 
 Upper Left: `Curve 1` (Red), Bottom: `Blended Curve` (Purple), Upper Right: `Curve 2` (Blue)
+
+## 🧪 Testing in Unity  
+
+This repository also includes a Unity project so you can test the functionality yourself! Here's how to try it out:  
+
+1. Open the `SampleScene` in the Unity project.  
+2. In the scene, select the `CurveVisualizer GameObject`.  
+3. On the `CurveVisualizer component`:  
+   - Modify the `Curve1` and `Curve2` animation curves to your liking.  
+   - Adjust the `BlendPercentage` value to set the blending percentage.  
+4. Click the `Visualize` button on the component to see the results directly in the scene.  
+
+This setup lets you experiment with different curves and blending settings to see how the tool performs in real-time.  
 
 ## 🛠️ API Reference
 
