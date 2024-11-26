@@ -5,7 +5,7 @@ Hey there! 👋
 This is a handy little Unity tool for blending two `AnimationCurve` objects together. Whether you're creating procedural animations, blending tweens, or just experimenting with curves, this utility has got you covered. 🎮  
 
 ## ✨ Features
-- Blends two curves based on a percentage you specify (e.g., 20% blend).
+- Blends two curves based on a percentage you specify (e.g., `20% blend`).
 - Smoothly handles tangents (`inTangent` and `outTangent`) so your animations look natural.
 - Supports weighted tangents, preserving all those fine details from the original curves.
 - Outputs a single, seamless curve that you can use right away.
@@ -45,7 +45,7 @@ public class Example : MonoBehaviour
 ```
 
 🖼️ Visual Example
-Below is an example of two curves being blended together based on a 20% blend percentage. The result is a seamless transition from one curve to another:
+Below is an example of two curves being blended together based on a `20% blend percentage`. The result is a seamless transition from one curve to another:
 
 ![Example](https://github.com/user-attachments/assets/c4f216d4-0a0b-4921-8183-0ab5dbe12b43)
 
@@ -62,7 +62,8 @@ AnimationCurve BlendCurves(AnimationCurve curve1, AnimationCurve curve2, float b
 
 `curve1`: The first curve.  
 `curve2`: The second curve.  
-`blendPercentage`: A float (0.01f to 0.25f) representing the blend percentage.  
+`blendPercentage`: A float (`0.01f to 0.25f`) representing the blend percentage.  
+
 **Returns**: A new AnimationCurve that smoothly blends the two input curves.  
 
 **CalculateTangents**
@@ -73,7 +74,8 @@ AnimationCurve BlendCurves(AnimationCurve curve1, AnimationCurve curve2, float b
 
 `curve`: The curve to evaluate.  
 `time`: The time position for the tangent calculation.  
-`deltaTime`: The offset for calculating tangents (default: 0.01).  
+`deltaTime`: The offset for calculating tangents (`default: 0.01f`).  
+
 **Returns**: The calculated inTangent and outTangent.  
 
 **CalculateWeights**
@@ -84,6 +86,7 @@ AnimationCurve BlendCurves(AnimationCurve curve1, AnimationCurve curve2, float b
 
 `curve`: The curve to evaluate.  
 `time`: The time position for the weight calculation.  
+
 **Returns**: The calculated inWeight and outWeight.  
 
 ## 🤝 Contributing
