@@ -28,14 +28,14 @@ using UnityEngine;
 
 public class Example : MonoBehaviour
 {
-    public AnimationCurve curve1;
-    public AnimationCurve curve2;
-    public float blendPercentage = 0.5f;
+    public AnimationCurve Curve1;
+    public AnimationCurve Curve2;
+
+    public float BlendPercentage = 0.2f;
 
     void Start()
-    {
-        CurveBlender blender = new CurveBlender();
-        AnimationCurve blendedCurve = blender.BlendCurves(curve1, curve2, blendPercentage);
+    {        
+        AnimationCurve blendedCurve = CurveBlender.BlendCurves(curve1, curve2, blendPercentage);
 
         // Use the blended curve
         Debug.Log("Blended curve created!");
