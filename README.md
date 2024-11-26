@@ -111,4 +111,4 @@ Email: ugur@misclickgames.com
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the CC0 1.0 Universal License.
